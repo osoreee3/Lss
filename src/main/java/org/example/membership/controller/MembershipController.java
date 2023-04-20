@@ -14,27 +14,20 @@ public class MembershipController {
 
     public void join() {
         System.out.println("이름을 입력해주세요.");
-        System.out.printf("=> ");
         String name = Container.getsc().nextLine().trim();
         System.out.println("나이를 입력해주세요");
-        System.out.printf("=> ");
         int age = Container.getsc().nextInt();
         Container.getsc().nextLine();
         System.out.println("생년월일을 입력해주세요.");
-        System.out.printf("=> ");
         int birth = Container.getsc().nextInt();
         Container.getsc().nextLine();
         System.out.println("성별을 입력해주세요.");
-        System.out.printf("=> ");
         String gender = Container.getsc().nextLine().trim();
         System.out.println("사용할 ID를 입력해주세요.");
-        System.out.printf("=> ");
         String userID = Container.getsc().nextLine().trim();
         System.out.println("사용할 비밀번호를 입력해주세요.");
-        System.out.printf("=> ");
         String password = Container.getsc().nextLine().trim();
         System.out.println("정보를 저장하시겠습니까?, 저장하시려면 저장하기를 입력해주세요.");
-        System.out.printf("=> ");
         String result = Container.getsc().nextLine().trim();
         System.out.println("정보가 저장되었습니다. 회원가입을 종료합니다.");
         int id = count;
